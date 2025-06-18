@@ -1,24 +1,25 @@
 pluginManagement {
     repositories {
+        // Репозиторий Google (Maven) с фильтрацией групп
         google {
             content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
+                includeGroupByRegex("com\\.android.*")  // Плагины Android (com.android.*)
+                includeGroupByRegex("com\\.google.*")    // Плагины Google (com.google.*)
+                includeGroupByRegex("androidx.*")        // Плагины AndroidX (androidx.*)
             }
         }
-        mavenCentral()
-        gradlePluginPortal()
+        mavenCentral()      // Основной репозиторий Maven
+        gradlePluginPortal() // Официальный портал плагинов Gradle
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // Блокировка репозиториев в модулях
     repositories {
-        google()
-        mavenCentral()
+        google()      // Репозиторий Google для Android-библиотек
+        mavenCentral() // Репозиторий Maven Central для общих библиотек
     }
 }
 
-rootProject.name = "ASUapp001"
-include(":app")
+rootProject.name = "ASUapp001"  // Имя корневого проекта (влияет на имя папки в .idea)
+include(":app")                // Включение модуля `app` в сборку
  
