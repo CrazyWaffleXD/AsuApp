@@ -27,64 +27,64 @@
 
 ### 📂 **Структура репозитория**  
 
-ASUApp001
-├── app/ 📱 [Основной модуль приложения]
-│   ├── manifests/
-│   │   └── AndroidManifest.xml ⚙️ [Главный конфигурационный файл приложения]
-│   ├── kotlin+java/
-│   │   └── com.example.asuapp001/
-│   │       └── ui/
-│   │           ├── ad/ 📺 [Модуль рекламы]
-│   │           │   ├── AdFragment.kt 👀 [Вью для отображения рекламы]
-│   │           │   └── AdViewModel.kt 🧠 [Логика управления рекламой]
-│   │           ├── AdminPanel/ ⚙️ [Панель администратора]
-│   │           │   ├── AdminPanel.kt 👨‍💼 [Интерфейс администратора]
-│   │           │   └── AdminPanelViewModel.kt 🧠 [Бизнес-логика админки]
-│   │           ├── diaryPrilagusha/ 📓 [Модуль дневника]
-│   │           │   ├── diaryPrilagushaFragment.kt 👀 [Экран дневника]
-│   │           │   └── diaryPrilagushaViewModel.kt 🧠 [Управление записями дневника]
-│   │           ├── gallery/ 🖼️ [Галерея изображений]
-│   │           │   ├── GalleryFragment.kt 👀 [Просмотр галереи]
-│   │           │   └── GalleryViewModel.kt 🧠 [Управление изображениями]
-│   │           ├── home/ 🏠 [Главный экран]
-│   │           │   ├── HomeFragment.kt 👀 [Стартовый экран]
-│   │           │   └── HomeViewModel.kt 🧠 [Основная логика приложения]
-│   │           ├── fragment_bopros.kt ❓ [Фрагмент вопросов/опросов]
-│   │           ├── fragment_creators.kt 👥 [Экран "О разработчиках"]
-│   │           ├── FragmentCreatorsViewModel.kt 🧠 [Логика экрана создателей]
-│   │           └── MainActivity.kt 🎯 [Главная активность, навигационный хост]
-│   ├── res/ 🎨 [Ресурсы приложения]
-│   │   ├── drawable/
-│   │   │   ├── fon.jpg 🖼️ [Фоновое изображение]
-│   │   │   ├── logo1.png 🏷️ [Логотип приложения]
-│   │   │   ├── ic_launcher_foreground.xml ⚡ [Векторная иконка]
-│   │   │   └── fonts.ttf 🔤 [Файл шрифта - рекомендуется перенести в res/font/]
-│   │   ├── layout/
-│   │   │   ├── activity_main.xml 🎨 [Главный макет активности]
-│   │   │   ├── fragment_ad.xml 🎨 [Макет рекламного фрагмента]
-│   │   │   └── nav_header_main.xml 🎨 [Заголовок навигационного drawer]
-│   │   ├── menu/
-│   │   │   ├── main.xml 📋 [Меню ActionBar]
-│   │   │   └── activity_main_drawer.xml 📋 [Меню навигационного drawer]
-│   │   ├── mipmap/
-│   │   │   ├── ic_launcher.webp 🎯 [Иконка приложения]
-│   │   │   └── ic_launcher_round.webp 🎯 [Круглая иконка приложения]
-│   │   ├── navigation/
-│   │   │   └── mobile_navigation.xml 🗺️ [Граф навигации между экранами]
-│   │   ├── values/
-│   │   │   ├── colors.xml 🎨 [Цветовая палитра приложения]
-│   │   │   ├── strings.xml 📝 [Текстовые ресурсы]
-│   │   │   └── themes.xml 🌙 [Темы приложения (light/dark)]
-│   │   └── xml/
-│   │       ├── backup_rules.xml 💾 [Правила резервного копирования]
-│   │       └── data_extraction_rules.xml 💾 [Правила извлечения данных]
-│   └── Gradle Scripts/ 🛠️ [Скрипты сборки]
-│       ├── build.gradle.kts(Project: ASUapp001) 📦 [Конфигурация проекта]
-│       ├── build.gradle.kts(Module: app) 📦 [Конфигурация модуля app]
-│       ├──proguard-rules.pro 🔒 [Правила обфускации кода]
-│       ├──gradle.properties ⚙️ [Настройки Gradle]
-│       ├──gradle-wrapper.properties 📋 [Версия Gradle wrapper]
-│       ├──libs.versions.toml 📚 [Централизованное управление зависимостями - ОТЛИЧНО!]
-│       ├──local.properties 🖥️ [Локальные пути SDK]
-│       └── settings.gradle.kts ⚙️ [Настройки проекта]
-└── ...
+ASUApp001 
+├── app/ 📱 [Основной модуль приложения] 
+│   ├── manifests/ 
+│   │   └── AndroidManifest.xml ⚙️ [Главный конфигурационный файл приложения] 
+│   ├── kotlin+java/ 
+│   │   └── com.example.asuapp001/ 
+│   │       └── ui/ 
+│   │           ├── ad/ 📺 [Модуль рекламы] 
+│   │           │   ├── AdFragment.kt 👀 [Вью для отображения рекламы] 
+│   │           │   └── AdViewModel.kt 🧠 [Логика управления рекламой] 
+│   │           ├── AdminPanel/ ⚙️ [Панель администратора] 
+│   │           │   ├── AdminPanel.kt 👨‍💼 [Интерфейс администратора] 
+│   │           │   └── AdminPanelViewModel.kt 🧠 [Бизнес-логика админки] 
+│   │           ├── diaryPrilagusha/ 📓 [Модуль дневника] 
+│   │           │   ├── diaryPrilagushaFragment.kt 👀 [Экран дневника] 
+│   │           │   └── diaryPrilagushaViewModel.kt 🧠 [Управление запись дневника] 
+│   │           ├── gallery/ 🖼️ [Галерея изображений] 
+│   │           │   ├── GalleryFragment.kt 👀 [Просмотр галереи] 
+│   │           │   └── GalleryViewModel.kt 🧠 [Управление изображениями] 
+│   │           ├── home/ 🏠 [Главный экран] 
+│   │           │   ├── HomeFragment.kt 👀 [Стартовый экран] 
+│   │           │   └── HomeViewModel.kt 🧠 [Основная логика приложения] 
+│   │           ├── fragment_bopros.kt ❓ [Фрагмент вопросов/опросов] 
+│   │           ├── fragment_creators.kt 👥 [Экран "О разработчиках"] 
+│   │           ├── FragmentCreatorsViewModel.kt 🧠 [Логика экрана создателей] 
+│   │           └── MainActivity.kt 🎯 [Главная активность, навигационный хост] 
+│   ├── res/ 🎨 [Ресурсы приложения] 
+│   │   ├── drawable/ 
+│   │   │   ├── fon.jpg 🖼️ [Фоновое изображение] 
+│   │   │   ├── logo1.png 🏷️ [Логотип приложения] 
+│   │   │   ├── ic_launcher_foreground.xml ⚡ [Векторная иконка] 
+│   │   │   └── fonts.ttf 🔤 [Файл шрифта - рекомендуется перенести в res/font/] 
+│   │   ├── layout/ 
+│   │   │   ├── activity_main.xml 🎨 [Главный макет активности] 
+│   │   │   ├── fragment_ad.xml 🎨 [Макет рекламного фрагмента] 
+│   │   │   └── nav_header_main.xml 🎨 [Заголовок навигационного drawer] 
+│   │   ├── menu/ 
+│   │   │   ├── main.xml 📋 [Меню ActionBar] 
+│   │   │   └── activity_main_drawer.xml 📋 [Меню навигационного drawer] 
+│   │   ├── mipmap/ 
+│   │   │   ├── ic_launcher.webp 🎯 [Иконка приложения] 
+│   │   │   └── ic_launcher_round.webp 🎯 [Круглая иконка приложения] 
+│   │   ├── navigation/ 
+│   │   │   └── mobile_navigation.xml 🗺️ [Граф навигации между экранами] 
+│   │   ├── values/ 
+│   │   │   ├── colors.xml 🎨 [Цветовая палитра приложения] 
+│   │   │   ├── strings.xml 📝 [Текстовые ресурсы] 
+│   │   │   └── themes.xml 🌙 [Темы приложения (light/dark)] 
+│   │   └── xml/ 
+│   │       ├── backup_rules.xml 💾 [Правила резервного копирования] 
+│   │       └── data_extraction_rules.xml 💾 [Правила извлечения данных] 
+│   └── Gradle Scripts/ 🛠️ [Скрипты сборки] 
+│       ├── build.gradle.kts(Project: ASUapp001) 📦 [Конфигурация проекта] 
+│       ├── build.gradle.kts(Module: app) 📦 [Конфигурация модуля app] 
+│       ├──proguard-rules.pro 🔒 [Правила обфускации кода] 
+│       ├──gradle.properties ⚙️ [Настройки Gradle] 
+│       ├──gradle-wrapper.properties 📋 [Версия Gradle wrapper] 
+│       ├──libs.versions.toml 📚 [Централизованное управление зависимостями - ОТЛИЧНО!] 
+│       ├──local.properties 🖥️ [Локальные пути SDK] 
+│       └── settings.gradle.kts ⚙️ [Настройки проекта] 
+└── ... 
